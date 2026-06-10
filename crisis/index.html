@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Global Childcare Crisis — a timeline of despair and hope | Momni</title>
+<meta name="description" content="From the latchkey children of 1942 to 350 million children without care today — the full timeline of the global childcare crisis, and the mothers who keep answering it.">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Albert+Sans:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--purple:#6D58A4;--purple-deep:#4A3880;--teal:#0D878F;--teal-deep:#0A6B72;--algae:#92E2C1;--lavender:#F5F0FE;--teal-soft:#E1F7F2;--clay:#C99F72;--clay-deep:#8A6A45;--ember:#FDECEC;--ember-deep:#A32D2D;--ink:#2B2233;--muted:#6B6477}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Albert Sans',sans-serif;color:var(--ink);line-height:1.75}
+h1,h2,h3{font-family:'Montserrat',sans-serif}
+a{text-decoration:none;color:inherit}
+.script{font-family:'Caveat',cursive}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;background:rgba(255,255,255,0.96);border-bottom:1px solid #EEE9F9;z-index:50}
+.nav-inner{display:flex;align-items:center;height:68px;max-width:1120px;margin:0 auto;padding:0 24px}
+.cta-btn{background:var(--teal);color:white;font-weight:600;padding:10px 22px;border-radius:100px;font-size:15px;margin-left:auto}
+
+.hero{background:var(--ink);color:white;padding:80px 0 64px;text-align:center}
+.hero .today{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--algae);margin-bottom:18px}
+.hero h1{font-size:46px;font-weight:800;letter-spacing:-0.02em;line-height:1.15;max-width:760px;margin:0 auto 18px}
+.hero .script{font-size:28px;color:var(--clay);display:block;margin-bottom:22px}
+.hero p{font-size:18px;color:rgba(255,255,255,0.85);max-width:660px;margin:0 auto}
+.bignum{display:flex;gap:48px;justify-content:center;flex-wrap:wrap;margin-top:40px}
+.bn .n{font-family:'Montserrat',sans-serif;font-size:46px;font-weight:800;color:var(--algae)}
+.bn .l{font-size:13px;color:rgba(255,255,255,0.7);max-width:200px;margin:0 auto}
+.bn .src{font-size:11px;color:rgba(255,255,255,0.45)}
+.bn .src a{text-decoration:underline}
+
+.dialectic{padding:64px 0;text-align:center}
+.dialectic p{font-size:19px;max-width:720px;margin:0 auto 18px}
+.dialectic .pull{font-family:'Caveat',cursive;font-size:32px;color:var(--purple);margin:26px auto}
+
+.legend{display:flex;gap:28px;justify-content:center;font-size:14px;font-weight:600;margin:8px 0 36px}
+.dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:8px;vertical-align:middle}
+
+.tl{position:relative;padding:20px 0 40px}
+.tl::before{content:'';position:absolute;left:24px;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--algae),var(--clay) 30%,var(--ember-deep) 70%,var(--clay-deep))}
+.ev{position:relative;margin:0 0 26px 64px;border-radius:18px;padding:22px 26px;border:1.5px solid #EEE9F9;background:white}
+.ev::before{content:'';position:absolute;left:-47px;top:26px;width:17px;height:17px;border-radius:50%;border:3px solid white;box-shadow:0 0 0 2px currentColor}
+.ev.hope{border-color:#CBEEE3;background:#F4FCF9;color:var(--teal)}
+.ev.despair{border-color:#F2D8D8;background:#FDF7F7;color:var(--ember-deep)}
+.ev .body{color:var(--ink)}
+.ev .yr{font-family:'Montserrat',sans-serif;font-weight:800;font-size:14px;letter-spacing:0.08em}
+.ev.hope .yr{color:var(--teal-deep)}
+.ev.despair .yr{color:var(--ember-deep)}
+.ev h3{font-size:19px;font-weight:700;margin:4px 0 8px;color:var(--ink)}
+.ev p{font-size:15.5px;color:var(--ink)}
+.ev .src{font-size:13px;color:var(--muted);margin-top:10px;display:block}
+.ev .src a{color:var(--teal);font-weight:600}
+.ev.momni{border-color:var(--purple);background:var(--lavender);color:var(--purple)}
+.ev.momni .yr{color:var(--purple-deep)}
+.ev img{width:100%;max-width:380px;border-radius:14px;margin-top:14px;display:block}
+
+.chart{background:var(--lavender);border-radius:24px;padding:40px;margin:48px 0}
+.chart h2{font-size:24px;font-weight:800;margin-bottom:6px}
+.chart .sub{font-size:14px;color:var(--muted);margin-bottom:24px}
+.bars{display:flex;align-items:flex-end;gap:18px;height:220px}
+.bar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%}
+.bar .fill{width:100%;max-width:90px;background:var(--purple);border-radius:10px 10px 0 0;position:relative}
+.bar .v{font-family:'Montserrat',sans-serif;font-weight:800;font-size:14px;color:var(--purple-deep);margin-bottom:6px}
+.bar .y{font-size:13px;color:var(--muted);margin-top:8px;font-weight:600}
+.chart .src{font-size:12px;color:var(--muted);margin-top:16px}
+.chart .src a{color:var(--teal)}
+
+.quotes{margin:48px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.q{border-left:4px solid var(--clay);padding:6px 0 6px 20px;border-radius:0}
+.q p{font-size:17px;font-style:italic}
+.q span{font-size:13px;color:var(--muted)}
+
+.answer{background:var(--purple);color:white;border-radius:24px;padding:48px;text-align:center;margin:56px 0}
+.answer .script{font-size:30px;color:var(--algae);display:block;margin-bottom:12px}
+.answer h2{color:white;font-size:30px;font-weight:800;margin-bottom:14px}
+.answer p{font-size:17px;color:rgba(255,255,255,0.92);max-width:640px;margin:0 auto 24px}
+.answer a{display:inline-block;background:var(--algae);color:#0B4A36;font-weight:700;padding:15px 38px;border-radius:100px;font-size:17px;margin:0 8px 8px}
+.answer a.ghost{background:transparent;border:1.5px solid rgba(255,255,255,0.5);color:white}
+footer{background:var(--ink);color:rgba(255,255,255,0.55);padding:36px 0;font-size:13px;line-height:1.7}
+footer .wrap{max-width:1120px}
+@media(max-width:820px){.hero h1{font-size:30px}.bars{gap:8px}}
+</style>
+</head>
+<body>
+<nav><div class="nav-inner"><a href="../index.html"><img src="../assets/momni-logo-color-horizontal.png" alt="Momni Foundation" style="height:44px;display:block"></a><a href="../index.html#give" class="cta-btn">How the Circle gives</a></div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="today" id="today">June 2026</div>
+    <h1>The Global Childcare Crisis</h1>
+    <span class="script">Eighty years of despair. Eighty years of mothers answering it anyway.</span>
+    <p>This page is why Momni exists. Not a market opportunity — a wound in the world, documented below from this morning back to the year it first had a name. Read it both ways: down into the despair, and back up into the hope.</p>
+    <div class="bignum">
+      <div class="bn"><div class="n">350M</div><div class="l">children below primary age lack access to childcare</div><div class="src"><a href="https://www.worldbank.org/en/news/press-release/2021/03/04/nearly-350-million-children-lack-quality-childcare-in-the-world">World Bank</a></div></div>
+      <div class="bn"><div class="n">$13,184</div><div class="l">average yearly price of care for one US child</div><div class="src"><a href="https://info.childcareaware.org/price-and-supply-2025">Child Care Aware, 2025</a></div></div>
+      <div class="bn"><div class="n">51%</div><div class="l">of Americans live in a childcare desert</div><div class="src"><a href="https://www.americanprogress.org/article/americas-child-care-deserts-2018/">Center for American Progress</a></div></div>
+    </div>
+  </div>
+</header>
+
+<section class="dialectic">
+  <div class="wrap">
+    <p>In 53 of the world's poorest countries, one in five children under five is left home alone — or with a sibling barely older — while their mothers work, because there is no other choice. In the richest country on Earth, care for two children now costs more than rent in 49 states. The crisis is not coming. It has been here for eighty years, wearing different clothes.</p>
+    <p class="pull">"Who will care for all of these children?"</p>
+    <p>And yet — in every decade of this timeline, the same answer keeps surfacing: mothers, organizing care for each other, faster than any institution. The despair is real. So is the hope. Hold both.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="legend">
+    <span><span class="dot" style="background:var(--ember-deep)"></span>The despair</span>
+    <span><span class="dot" style="background:var(--teal)"></span>The hope</span>
+    <span><span class="dot" style="background:var(--purple)"></span>Momni's thread</span>
+  </div>
+
+  <div class="tl">
+    <div class="ev hope"><span class="yr">APRIL 2026</span><h3>Indiana buys back part of its waitlist</h3><p class="body">$200 million approved; about 14,000 of ~35,000 waitlisted children receive vouchers. More than 21,000 still wait.</p><span class="src">Source: <a href="https://www.wfyi.org/education/2026-04-16/indiana-ccdf-child-care-vouchers-state-budget-committee">WFYI</a> · <a href="https://indianacapitalchronicle.com/2026/04/14/governor-to-pump-200m-into-child-care-vouchers-take-14k-kids-off-waitlist/">Indiana Capital Chronicle</a></span></div>
+
+    <div class="ev despair"><span class="yr">MARCH 2026</span><h3>Missouri starts a waitlist for childcare help</h3><p class="body">Record demand forces the state to ration assistance; more than 11,000 families applied this year, and the list grew 60% in a single week.</p><span class="src">Source: <a href="https://dese.mo.gov/missouri-implement-waitlist-child-care-assistance-amid-record-demand">Missouri DESE</a> · <a href="https://www.kcur.org/education/2026-02-26/missouri-child-care-assistance-waitlist">KCUR</a></span></div>
+
+    <div class="ev momni"><span class="yr">2026</span><h3>Momni 2.0 — the Circle relaunches</h3><p class="body">After the pandemic chrysalis, Momni returns: community-led, founder-run, no investors, no take-rate. Mothers linking together, hour for hour — because the question of 2017 still hasn't been answered by anyone else.</p><img src="../assets/photos/laughing-baby-on-rug.jpg" alt="A mama lifting her toddler toward the sky" loading="lazy"></div>
+
+    <div class="ev despair"><span class="yr">NOVEMBER 2025</span><h3>Indiana freezes new childcare vouchers — 30,000 children waitlisted</h3><p class="body">The state halts new vouchers until 2027 as post-pandemic funding runs dry.</p><span class="src">Source: <a href="https://www.wfyi.org/news/articles/indiana-child-care-vouchers-waitlist-ccdf-2027">WFYI</a></span></div>
+
+    <div class="ev despair"><span class="yr">2025</span><h3>Care for two children now costs more than rent in 49 states</h3><p class="body">The US national average price reaches $13,184 per child per year — $28,168 for two children, roughly 35% of a median family's income. Prices rose 23% in four years.</p><span class="src">Source: <a href="https://info.childcareaware.org/price-and-supply-2025">Child Care Aware of America</a> · <a href="https://www.axios.com/2025/05/24/child-care-costs">Axios</a></span></div>
+
+    <div class="ev despair"><span class="yr">SEPT 2023 – SEPT 2024</span><h3>The federal "childcare cliff"</h3><p class="body">$24 billion in pandemic stabilization funds — which had kept 220,000 childcare programs alive — expire. States begin reinstating waitlists; the 2026 surges are the aftershock.</p><span class="src">Source: <a href="https://www.cbsnews.com/news/child-care-cliff-federal-funding-arpa-expiration-impact/">CBS News</a> · <a href="https://tcf.org/content/report/child-care-funding-cliff-at-one-year/">The Century Foundation</a></span></div>
+
+    <div class="ev hope"><span class="yr">APRIL 2022</span><h3>The World Bank launches "Invest in Childcare"</h3><p class="body">$180M+ pledged to expand affordable childcare across low- and middle-income countries, matching country investments dollar for dollar — the largest global push yet.</p><span class="src">Source: <a href="https://www.worldbank.org/en/news/press-release/2022/04/28/world-bank-partners-launch-new-fund-to-spur-smart-investments-in-childcare">World Bank</a></span></div>
+
+    <div class="ev despair"><span class="yr">MARCH 2021</span><h3>"Nearly 350 million children lack quality childcare in the world"</h3><p class="body">The World Bank quantifies the crisis: more than 40% of all children below primary-school age need care and have no access to it. Closing the gap could create 43 million jobs — most of them for women.</p><span class="src">Source: <a href="https://www.worldbank.org/en/news/press-release/2021/03/04/nearly-350-million-children-lack-quality-childcare-in-the-world">World Bank</a></span></div>
+
+    <div class="ev despair"><span class="yr">2020 – 2021</span><h3>COVID closes the doors</h3><p class="body">Roughly 16,000 US childcare providers close permanently; about one million women go missing from the American workforce. Momni — like the providers it served — goes quiet. The chrysalis begins.</p><span class="src">Source: <a href="https://fortune.com/2022/02/09/child-care-providers-shut-down-pandemic/">Fortune / CCAoA</a> · <a href="https://www.americanprogress.org/article/covid-19-sent-womens-workforce-progress-backward/">CAP</a></span></div>
+
+    <div class="ev despair"><span class="yr">2018</span><h3>Over half of America is a childcare desert</h3><p class="body">51% of Americans live where licensed care is scarce or absent — including more than 75% of neighborhoods in Utah, where Momni was born.</p><span class="src">Source: <a href="https://www.americanprogress.org/article/americas-child-care-deserts-2018/">Center for American Progress</a></span></div>
+
+    <div class="ev momni"><span class="yr">2017</span><h3>A mother of eight hears the question — and Momni is born</h3><p class="body">On March 16, 2017, Karmel learns of the global childcare crisis and sees the answer in the elephant matriarchy: when one is vulnerable, the mothers circle up. Momni launches mom-to-mom caresharing from Provo, Utah, and grows to 26,000+ mamas in all 50 states.</p><span class="src">Source: <a href="https://business.utah.gov/news/in-their-words-karmel-larson/">Utah Governor's Office of Economic Opportunity</a> · <a href="https://www.deseret.com/2018/12/23/20661836/female-led-startup-in-utah-gathers-2-million-in-funding-to-help-more-moms-needing-child-care/">Deseret News</a></span><img src="../assets/photos/mama-cradling-newborn.jpg" alt="A mama cradling her newborn" loading="lazy"></div>
+
+    <div class="ev despair"><span class="yr">2016</span><h3>The crisis gets its name: "the global childcare crisis"</h3><p class="body">The Overseas Development Institute publishes <em>Women's Work: Mothers, Children and the Global Childcare Crisis</em> — documenting 35.5 million children under five left home alone or with a young sibling across 53 developing countries, and mothers forced into "stark choices" between feeding their children and watching them. The term enters the world one year before Momni does.</p><span class="src">Source: <a href="https://odi.org/en/publications/womens-work-mothers-children-and-the-global-childcare-crisis/">ODI, 2016</a></span></div>
+
+    <div class="ev hope"><span class="yr">2012</span><h3>The "Third Billion" rises</h3><p class="body">Economists project nearly a billion women entering the global workforce within two decades — a tidal wave of working mothers the world's care systems were never built for. The need becomes mathematically undeniable.</p><span class="src">Source: <a href="https://www.strategy-business.com/article/00137">strategy+business</a></span></div>
+
+    <div class="ev hope"><span class="yr">1997</span><h3>Quebec proves it can be solved</h3><p class="body">$5-a-day universal childcare launches. Within two decades, labor participation among Quebec mothers of young children jumps ~20 points — rivaling Sweden — while the program pays for itself in tax revenue.</p><span class="src">Source: <a href="https://www.ippr.org/articles/lessons-from-quebecs-universal-low-fee-childcare-programme">IPPR</a></span></div>
+
+    <div class="ev hope"><span class="yr">1981</span><h3>The world's nations sign on — on paper</h3><p class="body">ILO Convention No. 156 calls on countries to build community childcare for workers with family responsibilities. Forty-five nations ratify it. Implementation lags by decades.</p><span class="src">Source: <a href="https://normlex.ilo.org/dyn/normlex/en/f?p=NORMLEXPUB%3A12100%3A0%3A%3ANO%3A%3AP12100_ILO_CODE%3AC156">ILO</a></span></div>
+
+    <div class="ev despair"><span class="yr">DECEMBER 9, 1971</span><h3>The great what-if: universal childcare vetoed</h3><p class="body">The bipartisan Comprehensive Child Development Act passes Congress — national, universal, sliding-scale childcare. President Nixon vetoes it, citing its "family-weakening implications." American childcare policy never recovers; by then, newspapers were already calling it the "day care crisis."</p><span class="src">Source: <a href="https://www.npr.org/transcripts/497850292">NPR</a> · <a href="https://time.com/6125667/universal-childcare-history-nixon-veto/">TIME</a></span></div>
+
+    <div class="ev hope"><span class="yr">1943 – 1946</span><h3>America's only universal childcare — built in wartime, dismantled in peace</h3><p class="body">The Lanham Act funds care for some 550,000–600,000 children of war-working mothers — proof, never repeated, that the country could do it when it decided children mattered to the war effort. The centers close in 1946.</p><span class="src">Source: <a href="https://www.nps.gov/articles/000/childcare-on-the-world-war-ii-home-front.htm">National Park Service</a></span></div>
+
+    <div class="ev despair"><span class="yr">1942</span><h3>Where the timeline begins: the latchkey children</h3><p class="body">As mothers pour into war factories, stories of children locked in cars and empty homes shock the American public. The condition that would one day be called the global childcare crisis gets its first headlines — and its first proof that mothers will work regardless, so the only question is who holds the babies.</p><span class="src">Source: <a href="https://www.history.com/articles/universal-childcare-world-war-ii">History.com</a></span></div>
+  </div>
+
+  <div class="chart">
+    <h2>The price of one year of care, one US child</h2>
+    <div class="sub">National average annual price — Child Care Aware of America</div>
+    <div class="bars">
+      <div class="bar"><div class="v">$10,174</div><div class="fill" style="height:54%"></div><div class="y">2020</div></div>
+      <div class="bar"><div class="v">$11,582</div><div class="fill" style="height:66%"></div><div class="y">2023</div></div>
+      <div class="bar"><div class="v">$13,128</div><div class="fill" style="height:88%"></div><div class="y">2024</div></div>
+      <div class="bar"><div class="v">$13,184</div><div class="fill" style="height:90%;background:var(--ember-deep)"></div><div class="y">2025</div></div>
+    </div>
+    <div class="src">Sources: <a href="https://www.childcareaware.org/thechildcarestandstill/">CCAoA 2020</a> · <a href="https://info.childcareaware.org/hubfs/2023_Affordability_Analysis.pdf">2023</a> · <a href="https://www.childcareaware.org/price-landscape24/">2024</a> · <a href="https://info.childcareaware.org/price-and-supply-2025">2025</a>. For two children, the 2025 average is $28,168 — about 35% of median household income, more than rent in 49 states.</div>
+  </div>
+
+  <div class="quotes">
+    <div class="q"><p>"Nearly 350 million children lack quality childcare in the world"</p><span>— World Bank, 2021</span></div>
+    <div class="q"><p>"Millions of young children left home alone in global childcare crisis"</p><span>— Overseas Development Institute, 2016</span></div>
+    <div class="q"><p>"America was very close to universal day care"</p><span>— The New Republic</span></div>
+  </div>
+
+  <div class="answer">
+    <span class="script">The circle protects the circle.</span>
+    <h2>The hope was never an institution. It was always us.</h2>
+    <p>Eighty years of this timeline teaches one thing: governments wax and wane, funding cliffs come and go — and in every era, the care that actually happened came from mothers organizing for each other. That is what Momni is: the oldest answer in the world, finally with the tools it deserves. Mother to mother. Hour for hour.</p>
+    <a href="../index.html#give">Fund an hour of care</a>
+    <a class="ghost" href="https://momni.com/waitlist/">Join the Circle at momni.com</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Statistics and events cited to their original sources; figures reflect the most recent data available as of June 2026. Momni is a community platform; members make their own care decisions.<br><br>
+    momni.com and app.momni.com are operated by Momni, Inc. The Momni Foundation is a separate 501(c)(3). One brand, two entities, separate finances.
+  </div>
+</footer>
+<script>
+var d=new Date();var m=['January','February','March','April','May','June','July','August','September','October','November','December'];
+document.getElementById('today').textContent=m[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear()+' — and the question still stands';
+</script>
+</body>
+</html>
