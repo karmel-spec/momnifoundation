@@ -140,6 +140,24 @@ footer img{height:36px;margin-bottom:18px;opacity:0.95}
       <a href="#story">The Elephant Story</a>
       <a href="#transparency">Transparency</a>
     </div>
+    <select id="momni-lang" aria-label="Language" title="Language">
+      <option value="en">🌍 English</option>
+      <option value="es">Español</option>
+      <option value="pt">Português</option>
+      <option value="fr">Français</option>
+      <option value="ar">العربية</option>
+      <option value="hi">हिन्दी</option>
+      <option value="zh-CN">中文</option>
+      <option value="tl">Filipino</option>
+      <option value="vi">Tiếng Việt</option>
+      <option value="sw">Kiswahili</option>
+      <option value="de">Deutsch</option>
+      <option value="it">Italiano</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+      <option value="ru">Русский</option>
+      <option value="id">Bahasa Indonesia</option>
+    </select>
     <a href="#donate" class="cta-btn">Donate</a>
   </div>
 </nav>
@@ -283,5 +301,33 @@ footer img{height:36px;margin-bottom:18px;opacity:0.95}
 })();
 </script>
 
+
+<!-- momni-lang-picker -->
+<style>.goog-te-banner-frame,.skiptranslate{display:none!important}body{top:0!important}
+#momni-lang{border:1.5px solid #E5E0F0;border-radius:100px;padding:6px 12px;font:inherit;font-size:14px;color:inherit;background:#fff;cursor:pointer}</style>
+<div id="google_translate_element" style="display:none"></div>
+<script>
+function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',autoDisplay:false},'google_translate_element')}
+(function(){
+  var sel=document.getElementById('momni-lang');
+  if(!sel)return;
+  var m=document.cookie.match(/(?:^|;\s*)googtrans=\/en\/([^;]+)/);
+  if(m)sel.value=decodeURIComponent(m[1]);
+  sel.addEventListener('change',function(){
+    var code=sel.value,host=location.hostname;
+    if(code==='en'){
+      document.cookie='googtrans=;path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT';
+      document.cookie='googtrans=;path=/;domain='+host+';expires=Thu, 01 Jan 1970 00:00:00 GMT';
+      document.cookie='googtrans=;path=/;domain=.'+host+';expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    }else{
+      document.cookie='googtrans=/en/'+code+';path=/';
+      document.cookie='googtrans=/en/'+code+';path=/;domain='+host;
+      document.cookie='googtrans=/en/'+code+';path=/;domain=.'+host;
+    }
+    location.reload();
+  });
+})();
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
