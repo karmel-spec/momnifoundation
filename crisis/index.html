@@ -79,6 +79,33 @@ nav{position:sticky;top:0;background:rgba(255,255,255,0.96);border-bottom:1px so
 footer{background:var(--ink);color:rgba(255,255,255,0.55);padding:36px 0;font-size:13px;line-height:1.7}
 footer .wrap{max-width:1120px}
 @media(max-width:820px){.hero h1{font-size:30px}.bars{gap:8px}}
+
+/* Two-row header (option E — Ribbon Classic) */
+.mh{position:sticky;top:0;z-index:50}
+.mh .wrap{max-width:1120px}
+.mh-top-inner{display:flex;align-items:center;justify-content:flex-end;gap:20px;height:36px;font-size:13px}
+.mh-main-inner{display:flex;align-items:center;gap:24px;height:68px}
+.mh-links{display:flex;gap:22px;margin-left:auto;font-size:15px;font-weight:500}
+.mh-burger{display:none;background:none;border:none;color:#fff;font-size:24px;cursor:pointer;margin-left:auto}
+.mh-mobile{display:none}
+.mh-mobile.open{display:block;padding:14px 24px 20px}
+.mh-mobile a{display:block;padding:9px 0;color:#fff;font-size:16px;font-weight:500}
+.mh-mobile-div{border-top:1px solid rgba(255,255,255,0.25);margin:10px 0}
+#momni-lang{border:none;border-radius:100px;padding:4px 10px;font:inherit;font-size:13px;cursor:pointer}
+@media(max-width:960px){
+  .mh-top-inner a,.mh-links,.mh-main-inner>.mh-cta,.mh-tag{display:none}
+  .mh-burger{display:block}
+  .mh-top-inner{justify-content:flex-end}
+}
+.mh-top{background:#4A3880}
+.mh-top-inner a{color:rgba(255,255,255,0.8)} .mh-top-inner a:hover{color:#fff}
+.mh-main{background:#6D58A4}
+.mh-links a{color:#fff} .mh-links a:hover{color:#92E2C1}
+.mh-cta{background:#92E2C1;color:#0B4A36;font-weight:600;padding:10px 22px;border-radius:100px;font-size:15px}
+.mh-cta:hover{filter:brightness(0.95)}
+.mh-mobile{background:#6D58A4}
+#momni-lang{background:rgba(255,255,255,0.12);color:#fff}
+#momni-lang option{color:#2B2233}
 </style>
 
 <!-- SEO -->
@@ -118,25 +145,53 @@ footer .wrap{max-width:1120px}
 </script>
 </head>
 <body>
-<nav><div class="nav-inner"><a href="../index.html"><img src="../assets/momni-logo-color-horizontal.png" alt="Momni Foundation" style="height:44px;display:block"></a><select id="momni-lang" aria-label="Language" title="Language">
-      <option value="en">🌍 English</option>
-      <option value="es">Español</option>
-      <option value="pt">Português</option>
-      <option value="fr">Français</option>
-      <option value="ar">العربية</option>
-      <option value="hi">हिन्दी</option>
-      <option value="zh-CN">中文</option>
-      <option value="tl">Filipino</option>
-      <option value="vi">Tiếng Việt</option>
-      <option value="sw">Kiswahili</option>
-      <option value="de">Deutsch</option>
-      <option value="it">Italiano</option>
-      <option value="ja">日本語</option>
-      <option value="ko">한국어</option>
-      <option value="ru">Русский</option>
-      <option value="id">Bahasa Indonesia</option>
-    </select>
-    <a href="../index.html#give" class="cta-btn">How the Circle gives</a></div></nav>
+
+<header class="mh" id="mh">
+  <div class="mh-top">
+    <div class="wrap mh-top-inner">
+      <a href="https://momni.com">Momni.com</a>
+      <a href="../index.html#mission">The Crisis</a>
+      <a href="mailto:developer@momni.com?subject=Beta%20feedback">Beta feedback</a>
+      <select id="momni-lang" aria-label="Language" title="Language">
+        <option value="en">🌍 English</option><option value="es">Español</option><option value="pt">Português</option><option value="fr">Français</option><option value="ar">العربية</option><option value="hi">हिन्दी</option><option value="zh-CN">中文</option><option value="tl">Filipino</option><option value="vi">Tiếng Việt</option><option value="sw">Kiswahili</option><option value="de">Deutsch</option><option value="it">Italiano</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="ru">Русский</option><option value="id">Bahasa Indonesia</option>
+      </select>
+    </div>
+  </div>
+  <div class="mh-main">
+    <div class="wrap mh-main-inner">
+      <a href="../index.html" class="mh-logo"><img src="../assets/momni-logo-white-horizontal.png" alt="Momni Foundation" style="height:44px;display:block"></a>
+      <nav class="mh-links">
+        <a href="../index.html#mission">Mission</a>
+        <a href="../index.html#give">How the Circle Gives</a>
+        <a href="../index.html#story">The Elephant Story</a>
+        <a href="../index.html#transparency">Transparency</a>
+        <a href="index.html">The Crisis</a>
+      </nav>
+      <a href="../index.html#donate" class="mh-cta">Donate</a>
+      <button class="mh-burger" id="mh-burger" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <div class="mh-mobile" id="mh-mobile">
+    <a href="../index.html#mission">Mission</a>
+    <a href="../index.html#give">How the Circle Gives</a>
+    <a href="../index.html#story">The Elephant Story</a>
+    <a href="../index.html#transparency">Transparency</a>
+    <a href="index.html">The Crisis</a>
+    <div class="mh-mobile-div"></div>
+    <a href="https://momni.com">Momni.com</a>
+    <a href="mailto:developer@momni.com?subject=Beta%20feedback">Beta feedback</a>
+    <a href="../index.html#donate" class="mh-cta" style="margin-top:10px;display:inline-block">Donate</a>
+  </div>
+</header>
+<script>
+(function(){
+  var b=document.getElementById('mh-burger'),m=document.getElementById('mh-mobile');
+  b.addEventListener('click',function(){
+    var open=m.classList.toggle('open');
+    b.setAttribute('aria-expanded',open);
+  });
+})();
+</script>
 
 <header class="hero">
   <div class="wrap">
