@@ -143,6 +143,34 @@ footer .wrap{max-width:1120px}
   "mainEntityOfPage": "https://momnifoundation.org/crisis/"
 }
 </script>
+<!-- momni-gate -->
+<script>
+(function(){
+  var KEY='momni-gate-v1', HASH='4c30e1ff68b60101f624cca4f7d6b1136575700e3d63e5f78f0734d76e4a1c72';
+  try{ if(localStorage.getItem(KEY)===HASH) return; }catch(e){ return; }
+  document.documentElement.style.visibility='hidden';
+  function show(){
+    document.documentElement.style.visibility='';
+    var d=document.createElement('div');
+    d.id='mgate';
+    d.innerHTML='<style>#mgate{position:fixed;inset:0;background:linear-gradient(180deg,#F5F0FE,#fff);z-index:2147483647;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;font-family:\'Albert Sans\',Helvetica,sans-serif}#mgate img{height:64px}#mgate .nm{font-family:\'Montserrat\',Helvetica,sans-serif;font-weight:800;font-size:34px;color:#4A3880;letter-spacing:-0.02em}#mgate form{display:flex;gap:8px}#mgate input{border:2px solid #6D58A4;border-radius:100px;padding:12px 22px;font-size:16px;width:210px;outline:none;text-align:center;font-family:inherit}#mgate button{border:none;border-radius:100px;background:#92E2C1;color:#0B4A36;font-weight:700;font-size:17px;padding:12px 24px;cursor:pointer;font-family:inherit}#mgate.no input{border-color:#C94B4B;animation:mgs .3s}@keyframes mgs{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}</style>'
+      + '<img src="/assets/momni-logo-color-horizontal.png" alt="Momni Foundation"><div class="nm" style="font-size:20px;color:#0D878F">Foundation</div>'
+      + '<form><input type="password" autocomplete="off" aria-label="Password"><button aria-label="Enter">\u2192</button></form>';
+    document.body.appendChild(d);
+    var f=d.querySelector('form'), inp=d.querySelector('input');
+    setTimeout(function(){ inp.focus(); }, 50);
+    f.addEventListener('submit', function(ev){
+      ev.preventDefault();
+      crypto.subtle.digest('SHA-256', new TextEncoder().encode(inp.value)).then(function(buf){
+        var h=Array.from(new Uint8Array(buf)).map(function(b){return b.toString(16).padStart(2,'0');}).join('');
+        if(h===HASH){ try{localStorage.setItem(KEY,h);}catch(e){} d.remove(); }
+        else { d.classList.add('no'); inp.value=''; setTimeout(function(){d.classList.remove('no');},400); }
+      });
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', show); else show();
+})();
+</script>
 </head>
 <body>
 
